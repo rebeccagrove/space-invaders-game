@@ -23,10 +23,46 @@ $color-display: #f9d71c;
 
     &__logo {
         width: 100%;
-        border: 2px solid red;
+        height: 500px;
         display: flex;
         justify-content: center;
+        align-items: flex-end;
+    }
+
+    #button-container {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__button {
+        padding: 10px;
+        width: 200px;
+        height: 60px;
+        font-family: "Press Start 2P", cursive;
+        font-size: 1.8em;
+        color: #f9d71c;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 20%;
+        cursor: pointer;
+        animation: glowing 1300ms infinite;
     }
 }
-
+@keyframes glowing {
+  0% {
+    background-color: #00ffff;
+    box-shadow: 0 0 5px #00ffff;
+  }
+  50% {
+    background-color: #ff00ff;
+    box-shadow: 0 0 20px #ff00ff;
+  }
+  100% {
+    background-color: #feff04;
+    box-shadow: 0 0 5px #feff04;
+  }
+}
   
