@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+$font-display: "Press Start 2P", cursive;
+$color-display: #f9d71c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./assets/images/space-invaders-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    img {
+        width: 470px;
+        height: 400px;
+    }
+
+    &__logo {
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+  
