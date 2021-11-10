@@ -19,6 +19,7 @@ $color-display: #f9d71c;
     img {
         width: 470px;
         height: 400px;
+        opacity: 0.8;
     }
 
     &__logo {
@@ -26,7 +27,8 @@ $color-display: #f9d71c;
         height: 500px;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
+        padding: 50px;
     }
 
     #button-container {
