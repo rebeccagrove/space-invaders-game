@@ -67,4 +67,16 @@ $color-display: #f9d71c;
     box-shadow: 0 0 5px #feff04;
   }
 }
+
+.game {
+  background-image: url(./assets/images/space-invaders-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.game.hidden {
+  display: none;
+}
   
