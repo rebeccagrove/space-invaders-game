@@ -16,6 +16,7 @@ $color-display: #f9d71c;
     background-size: cover;
     background-repeat: no-repeat;
 
+
     img {
         width: 470px;
         height: 400px;
@@ -29,6 +30,10 @@ $color-display: #f9d71c;
         justify-content: center;
         align-items: flex-start;
         padding: 50px;
+    }
+
+    .landing-page.hidden {
+      display: none;
     }
 
     #button-container {
