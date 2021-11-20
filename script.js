@@ -13,7 +13,7 @@ playBtn.addEventListener("click", () => {
 
 class Enemyship {
     constructor(imgSrc, imageAlt, className) {
-        this.imageSrc = imgSrc;
+        this.imgSrc = imgSrc;
         this.imageAlt = imageAlt;
         this.className = className;
     }
@@ -27,19 +27,19 @@ class Enemyship {
     }
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 20; i++) {
     const enemy = new Enemyship(
         "/assets/images/alien-10-points.png",
         "enemy-ship",
-        "alien10",
+        "alien10"
     );
 
     enemyContainer.appendChild(enemy.createShip());
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 20; i++) {
     const enemy = new Enemyship(
-        "/assets/images/alien-30-points.png",
+        "./assets/images/alien-30-points.png",
         "enemy-ship",
         "alien30"
     );
@@ -57,7 +57,7 @@ for (let i = 0; i < 10; i++) {
     enemyContainer.appendChild(enemy.createShip());
 }
 
-let userStartingPosition = 470;
+let userStartingPosition = 660;
 console.log(userStartingPosition);
 userShip.style.left = userStartingPosition + "px";
 let newUserPosition;
@@ -77,4 +77,5 @@ document.addEventListener("keydown", (event) => {
         console.log(newUserPosition);
         userShip.style.left = newUserPosition + "px";
     }
+
 });

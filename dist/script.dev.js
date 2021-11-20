@@ -23,7 +23,7 @@ function () {
   function Enemyship(imgSrc, imageAlt, className) {
     _classCallCheck(this, Enemyship);
 
-    this.imageSrc = imgSrc;
+    this.imgSrc = imgSrc;
     this.imageAlt = imageAlt;
     this.className = className;
   }
@@ -42,13 +42,13 @@ function () {
   return Enemyship;
 }();
 
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 20; i++) {
   var enemy = new Enemyship("/assets/images/alien-10-points.png", "enemy-ship", "alien10");
   enemyContainer.appendChild(enemy.createShip());
 }
 
-for (var _i = 0; _i < 10; _i++) {
-  var _enemy = new Enemyship("/assets/images/alien-30-points.png", "enemy-ship", "alien30");
+for (var _i = 0; _i < 20; _i++) {
+  var _enemy = new Enemyship("./assets/images/alien-30-points.png", "enemy-ship", "alien30");
 
   enemyContainer.appendChild(_enemy.createShip());
 }
@@ -59,7 +59,7 @@ for (var _i2 = 0; _i2 < 10; _i2++) {
   enemyContainer.appendChild(_enemy2.createShip());
 }
 
-var userStartingPosition = 470;
+var userStartingPosition = 660;
 console.log(userStartingPosition);
 userShip.style.left = userStartingPosition + "px";
 var newUserPosition;
