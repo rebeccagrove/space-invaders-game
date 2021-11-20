@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.landing-page.hidden {
+  display: none;
+}
+
 .landing-page {
   min-height: 100vh;
   width: 100%;
@@ -24,9 +28,6 @@
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-}
-.landing-page .landing-page.hidden {
-  display: none;
 }
 .landing-page #button-container {
   width: 100%;
@@ -73,4 +74,28 @@
 
 .game.hidden {
   display: none;
+}
+
+.enemies {
+  position: relative;
+  height: 60vh;
+  width: 1000px;
+  border: 1px solid lightblue;
+  margin: auto;
+  top: 30px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1em;
+  width: 80%;
+}
+
+.usership {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+.usership img {
+  display: block;
+  max-width: 100%;
 }
